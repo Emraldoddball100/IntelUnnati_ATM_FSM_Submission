@@ -1,0 +1,1 @@
+Finite State Machines (FSMs) are commonly used to model the behavior and control flow of an ATM controller.FSMs provide a structured and intuitive way to design the control flow of an ATM controller. They help ensure that the system follows a defined set of states and transitions, making it easier to understand, implement, and maintain.
