@@ -1,0 +1,47 @@
+# Copyright (C) 2023  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+
+# Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+# File: D:\INTEL UNNATI\Atm_mini\atm_Pin_Planning.csv
+# Generated on: Sat Jul 15 16:29:34 2023
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Transceiver Analog Settings Protocol,VCCR_GXB/VCCT_GXB Voltage,Transceiver I/O Pin Termination,Transceiver Dedicated Refclk Pin Termination,Transmitter Common Mode Driver Voltage,Transmitter Slew Rate Control,Transmitter Differential Output Voltage,Receiver Buffer Common Mode Voltage,Strict Preservation
+Pin[0],Input,PIN_AK18,4A,B4A_N0,PIN_AK18,3.3-V LVCMOS,,,,,,,,,,,,,
+Pin[1],Input,PIN_AK19,4A,B4A_N0,PIN_AK19,3.3-V LVCMOS,,,,,,,,,,,,,
+accNumber[0],Input,PIN_AJ19,4A,B4A_N0,PIN_AJ19,3.3-V LVCMOS,,,,,,,,,,,,,
+accNumber[1],Input,PIN_AJ17,4A,B4A_N0,PIN_AJ17,3.3-V LVCMOS,,,,,,,,,,,,,
+accountfound,Output,PIN_W16,4A,B4A_N0,PIN_W16,3.3-V LVCMOS,,,,,,,,,,,,,
+amount_in[0],Input,PIN_AJ16,4A,B4A_N0,PIN_AJ16,3.3-V LVCMOS,,,,,,,,,,,,,
+amount_in[1],Input,PIN_AH18,4A,B4A_N0,PIN_AH18,3.3-V LVCMOS,,,,,,,,,,,,,
+amount_in[2],Input,PIN_AH17,4A,B4A_N0,PIN_AH17,3.3-V LVCMOS,,,,,,,,,,,,,
+amount_in[3],Input,PIN_AG16,4A,B4A_N0,PIN_AG16,3.3-V LVCMOS,,,,,,,,,,,,,
+balance[9],Output,PIN_Y21,5A,B5A_N0,PIN_Y21,3.3-V LVCMOS,,,,,,,,,,,,,
+balance[8],Output,PIN_W21,5A,B5A_N0,PIN_W21,3.3-V LVCMOS,,,,,,,,,,,,,
+balance[7],Output,PIN_W20,5A,B5A_N0,PIN_W20,3.3-V LVCMOS,,,,,,,,,,,,,
+balance[6],Output,PIN_Y19,4A,B4A_N0,PIN_Y19,3.3-V LVCMOS,,,,,,,,,,,,,
+balance[5],Output,PIN_W19,4A,B4A_N0,PIN_W19,3.3-V LVCMOS,,,,,,,,,,,,,
+balance[4],Output,PIN_W17,4A,B4A_N0,PIN_W17,3.3-V LVCMOS,,,,,,,,,,,,,
+balance[3],Output,PIN_V18,4A,B4A_N0,PIN_V18,3.3-V LVCMOS,,,,,,,,,,,,,
+card_inserted,Input,PIN_AE16,4A,B4A_N0,PIN_AE16,3.3-V LVCMOS,,,,,,,,,,,,,
+clk,Input,PIN_AF14,3B,B3B_N0,PIN_AF14,3.3-V LVCMOS,,,,,,,,,,,,,
+clk_out,Output,PIN_V16,4A,B4A_N0,PIN_V16,3.3-V LVCMOS,,,,,,,,,,,,,
+dep,Input,PIN_W15,3B,B3B_N0,PIN_W15,3.3-V LVCMOS,,,,,,,,,,,,,
+enter,Input,PIN_AA14,3B,B3B_N0,PIN_AA14,3.3-V LVCMOS,,,,,,,,,,,,,
+mini_s,Input,PIN_Y16,3B,B3B_N0,PIN_Y16,3.3-V LVCMOS,,,,,,,,,,,,,
+pinfound,Output,PIN_V17,4A,B4A_N0,PIN_V17,3.3-V LVCMOS,,,,,,,,,,,,,
+reset,Input,PIN_AF16,4A,B4A_N0,PIN_AF16,3.3-V LVCMOS,,,,,,,,,,,,,
+with_d,Input,PIN_AA15,3B,B3B_N0,PIN_AA15,3.3-V LVCMOS,,,,,,,,,,,,,
