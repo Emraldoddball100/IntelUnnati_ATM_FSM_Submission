@@ -1,2 +1,6 @@
 https://drive.google.com/file/d/1bNM15GL3ZtaXfwBAsphxPDazCdCTFKDn/view?usp=sharing
 Video Demo of the code, Simulation, Waveform, Netlist viewers, I/O planning
+
+https://drive.google.com/file/d/1Yjlmm0MDZ5YlYlQwq7xV_elYizdD8X8x/view?usp=sharing
+video demo of partial implementation, 1Hz clock, Account Valid Led, Pin Valid led, and reset
+Pins for the switch buttons were assigned as per the de1 soc manual but they did'nt work
