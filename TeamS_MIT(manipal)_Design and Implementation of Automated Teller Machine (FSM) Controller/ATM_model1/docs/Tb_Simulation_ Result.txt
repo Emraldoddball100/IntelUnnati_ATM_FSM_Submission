@@ -1,0 +1,536 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do atm_run_msim_rtl_verilog.do
+# if ![file isdirectory verilog_libs] {
+# 	file mkdir verilog_libs
+# }
+# 
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/INTEL\ UNNATI/Atm_mini {D:/INTEL UNNATI/Atm_mini/atm.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:59:36 on Jul 15,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/INTEL UNNATI/Atm_mini" D:/INTEL UNNATI/Atm_mini/atm.v 
+# -- Compiling module atm
+# 
+# Top level modules:
+# 	atm
+# End time: 14:59:36 on Jul 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/INTEL\ UNNATI/Atm_mini {D:/INTEL UNNATI/Atm_mini/Clock_divider.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:59:37 on Jul 15,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/INTEL UNNATI/Atm_mini" D:/INTEL UNNATI/Atm_mini/Clock_divider.v 
+# -- Compiling module Clock_divider
+# 
+# Top level modules:
+# 	Clock_divider
+# End time: 14:59:37 on Jul 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/INTEL\ UNNATI/Atm_mini {D:/INTEL UNNATI/Atm_mini/atm_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 14:59:37 on Jul 15,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/INTEL UNNATI/Atm_mini" D:/INTEL UNNATI/Atm_mini/atm_tb.v 
+# -- Compiling module atm_tb
+# 
+# Top level modules:
+# 	atm_tb
+# End time: 14:59:37 on Jul 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  atm_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" atm_tb 
+# Start time: 14:59:39 on Jul 15,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "atm(fast)".
+# ** Warning: D:/INTEL UNNATI/Atm_mini/atm_tb.v(17): (vopt-2685) [TFMPC] - Too few port connections for 'atm_dut'.  Expected 14, found 13.
+# ** Warning: D:/INTEL UNNATI/Atm_mini/atm_tb.v(17): (vopt-2718) [TFMPC] - Missing connection for port 'clk_out'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.atm_tb(fast)
+# Loading work.atm(fast)
+# Loading work.Clock_divider(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Welcome to the ATM
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 1 :PIN Verification (correct at 1st try) and deposit1
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  4 (Deposit)
+# deposit
+# deposit successful
+# Deposit Transaction:
+# Amount:  1000
+# New Balance:  1500
+# deposit_success 1
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 2 :PIN Verification (correct at 2nd try) and deposit3
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# PinV1 Enter: 1
+# Pin was incorrect. Please enter the correct PIN.
+# Attempted 1 time(s)
+# STATE: 11 (Pin_Verificaiton2)
+# PinV2 Enter: 1
+# Pin was correct.
+# Acc Index: 1
+# Pin valid: 1 (Menu)
+# STATE:  2 (Menu)
+# STATE:  4 (Deposit)
+# deposit
+# deposit successful
+# Deposit Transaction:
+# Amount:  1000
+# New Balance:  2500
+# deposit_success 1
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 3 :PIN Verification (correct at 3rd try) and deposit2
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# PinV1 Enter: 1
+# Pin was incorrect. Please enter the correct PIN.
+# Attempted 1 time(s)
+# STATE: 11 (Pin_Verificaiton2)
+# PinV2 Enter: 1
+# Pin was incorrect. Please enter the correct PIN.
+# Attempted 2 times
+# STATE: 12 (Pin_Verification3)
+# PinV3 Enter: 1
+# Pin was correct.
+# Acc Index: 1
+# Pin valid: 1
+# STATE:  2 (Menu)
+# STATE:  4 (Deposit)
+# deposit
+# deposit successful
+# Deposit Transaction:
+# Amount:   500
+# New Balance:  3000
+# deposit_success 1
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 4 : deposit4
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  4 (Deposit)
+# deposit
+# deposit successful
+# Deposit Transaction:
+# Amount:   500
+# New Balance:  3500
+# deposit_success 1
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 5: Mini Statement
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  5 (Mini_Statement)
+# withdrawal
+# | Transaction          3: | Balance-    0 | Amount-    0 |
+# | Transaction          2: | Balance-    0 | Amount-    0 |
+# | Transaction          1: | Balance-    0 | Amount-    0 |
+# | Transaction          0: | Balance-    0 | Amount-    0 |
+# Deposit
+# | Transaction          3: | Balance- 3500 | Amount-  500 |
+# | Transaction          2: | Balance- 3000 | Amount-  500 |
+# | Transaction          1: | Balance- 2500 | Amount- 1000 |
+# | Transaction          0: | Balance- 1500 | Amount- 1000 |
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# //Test Case 6 : Making another deposit to check if mini statement is functioning as intended
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  4 (Deposit)
+# deposit
+# deposit successful
+# Deposit Transaction:
+# Amount:   500
+# New Balance:  4000
+# deposit_success 1
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 7: Mini Statement
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  5 (Mini_Statement)
+# withdrawal
+# | Transaction          3: | Balance-    0 | Amount-    0 |
+# | Transaction          2: | Balance-    0 | Amount-    0 |
+# | Transaction          1: | Balance-    0 | Amount-    0 |
+# | Transaction          0: | Balance-    0 | Amount-    0 |
+# Deposit
+# | Transaction          3: | Balance- 4000 | Amount-  500 |
+# | Transaction          2: | Balance- 3500 | Amount-  500 |
+# | Transaction          1: | Balance- 3000 | Amount-  500 |
+# | Transaction          0: | Balance- 2500 | Amount- 1000 |
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# TestCase 8: Withdraw 1
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  3 (Withdraw)
+# withdraw
+# withdraw successful
+# Withdrawal Transaction:
+# Amount:   500
+# New Balance:  3500
+# withdraw_success 1
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# TestCase 9: Withdraw 2
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  3 (Withdraw)
+# withdraw
+# withdraw successful
+# Withdrawal Transaction:
+# Amount:   500
+# New Balance:  3000
+# withdraw_success 1
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# TestCase 10: Withdraw 3
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  3 (Withdraw)
+# withdraw
+# withdraw successful
+# Withdrawal Transaction:
+# Amount:   500
+# New Balance:  2500
+# withdraw_success 1
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# TestCase 11: Withdraw 4
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  3 (Withdraw)
+# withdraw
+# withdraw successful
+# Withdrawal Transaction:
+# Amount:   500
+# New Balance:  2000
+# withdraw_success 1
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 12: Mini Statement for withdraw
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  5 (Mini_Statement)
+# withdrawal
+# | Transaction          3: | Balance- 2000 | Amount-  500 |
+# | Transaction          2: | Balance- 2500 | Amount-  500 |
+# | Transaction          1: | Balance- 3000 | Amount-  500 |
+# | Transaction          0: | Balance- 3500 | Amount-  500 |
+# Deposit
+# | Transaction          3: | Balance- 4000 | Amount-  500 |
+# | Transaction          2: | Balance- 3500 | Amount-  500 |
+# | Transaction          1: | Balance- 3000 | Amount-  500 |
+# | Transaction          0: | Balance- 2500 | Amount- 1000 |
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# TestCase 13: Withdraw 5
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  3 (Withdraw)
+# withdraw
+# withdraw successful
+# Withdrawal Transaction:
+# Amount:  1000
+# New Balance:  1000
+# withdraw_success 1
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 14: Mini Statement for withdraw
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  5 (Mini_Statement)
+# withdrawal
+# | Transaction          3: | Balance- 1000 | Amount- 1000 |
+# | Transaction          2: | Balance- 2000 | Amount-  500 |
+# | Transaction          1: | Balance- 2500 | Amount-  500 |
+# | Transaction          0: | Balance- 3000 | Amount-  500 |
+# Deposit
+# | Transaction          3: | Balance- 4000 | Amount-  500 |
+# | Transaction          2: | Balance- 3500 | Amount-  500 |
+# | Transaction          1: | Balance- 3000 | Amount-  500 |
+# | Transaction          0: | Balance- 2500 | Amount- 1000 |
+# STATE:  6 (Finish)
+# Thank you for choosing **** banking services
+# STATE:  0 (Idle)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 14: if the deposit amount exceed 10,000/-
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  4 (Deposit)
+# deposit_INVALID 1
+# Deposit not Accepted above 10000/-
+# STATE:  0 (Idle)
+# Account found
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 15: if the withdrawal amount exceed the bank account balance
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# Pin is correct.
+# Pin valid: 1 (Menu)
+# STATE:  2
+# STATE:  3 (Withdraw)
+# withdraw_INVALID 1
+# Insufficient balance
+# STATE:  0 (Idle)
+# Account found
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 17:Blocking account
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# PinV1 Enter: 1
+# PinV1 Enter: 1
+# Pin was incorrect. Please enter the correct PIN.
+# Attempted 1 time(s)
+# STATE: 11 (Pin_Verificaiton2)
+# PinV2 Enter: 1
+# Pin was incorrect. Please enter the correct PIN.
+# Attempted 2 times
+# STATE: 12 (Pin_Verification3)
+# PinV3 Enter: 1
+# Pin was incorrect. Account will be blocked for 24 hours.
+# Attempted 3 times
+# STATE:  7 (Blocked)
+# The account is blocked please try again after 24 hours
+# STATE:  0 (Idle)
+# timer1 countdown:        0
+# timer1 countdown:        1
+# timer1 countdown:        2
+# timer1 countdown:        3
+# timer1 countdown:        4
+# timer1 countdown:        5
+# timer1 countdown:        6
+# timer1 countdown:        7
+# timer1 countdown:        8
+# timer1 countdown:        9
+# timer1 countdown:       10
+# timer1 countdown:       11
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 18: Checking if the account is blocked or not while timer is running
+# timer1 countdown:       12
+# timer1 countdown:       13
+# timer1 countdown:       14
+# Account 1 is blocked
+# Acc Valid: 1
+# Acc_Blocked: 1
+# STATE:  0 (Idle)
+# timer1 countdown:       15
+# Account 1 is blocked
+# Acc Valid: 1
+# Acc_Blocked: 1
+# STATE:  0 (Idle)
+# timer1 countdown:       16
+# timer1 countdown:       17
+# timer1 countdown:       18
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 19: Checking if the account is blocked or not while timer is running
+# timer1 countdown:       19
+# timer1 countdown:       20
+# timer1 countdown:       21
+# Account 1 is blocked
+# Acc Valid: 1
+# Acc_Blocked: 1
+# STATE:  0 (Idle)
+# timer1 countdown:       22
+# Account 1 is blocked
+# Acc Valid: 1
+# Acc_Blocked: 1
+# STATE:  0 (Idle)
+# timer1 countdown:       23
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Test Case 20 : Checking if the account is blocked or not while timer is running
+# Account found
+# Account found
+# card_inserted: 1
+# Acc Valid: 1
+# Acc_Blocked: 0
+# STATE:  1 (Pin_Verification)
+# ** Note: $finish    : D:/INTEL UNNATI/Atm_mini/atm_tb.v(535)
+#    Time: 2815 ns  Iteration: 0  Instance: /atm_tb
+# 1
+# Break in Module atm_tb at D:/INTEL UNNATI/Atm_mini/atm_tb.v line 535
+
